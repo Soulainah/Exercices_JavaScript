@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>EXERCICE 1 DE JAVASCRIPT</title>
+</head>
+<body>
+<!--Exercice 1-->  
+    <h1 style="background-color:coral;">JavaScript : Exercice 1 : Au survol de la souris, appliquer ... à l'image</h1>
+    <img src="Evoli.png" id="image1" onmouseover="borderImg1()" onmouseout="borderInitiale1()">
+    <img src="Les-spectres.png" id="image2" onmouseover="zoomImg2()" onmouseout="zoomInitiale2()">
+    <img src="Pikachu.png" id="image3" onmouseover="borderImg3()" onmouseout="borderInitiale3()">
+    <img src="Ronflex.png" id="image4" onmouseover="borderImg4()" onmouseout="borderInitiale4()">
+ <!--=====================Partie JavaScript=====================-->  
+   <script>
+    //Créer un border au survol
+       function borderImg1(){
+           document.getElementById('image1').style.border = "5px solid maroon";
+       }
+       function borderInitiale1(){
+           document.getElementById('image1').style.border = "";
+       }
+    //Créer un zoom au survol
+       
+
+    </script>
+</body>
+</html>

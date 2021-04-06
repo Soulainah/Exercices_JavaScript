@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>EXERCICE 5 DE JAVASCRIPT</title>
+</head>
+<body>
+    <h1 style="background-color:rgb(206, 203, 53);">JavaScript : Exercice 5 : Créer un formulaire qui multiplie les données</h1>
+        <div class="container">                
+            <form class="border border-dark rounded bg-info w-50 p-5 shadow p-3 mb-5 mt-5">
+                <div class="form-group">
+                    <label>Premier chiffre/nombre</label>
+                    <input class="form-control border border-dark" type="number" id="firstnumber">
+                </div>
+                <div class="form-group">
+                    <label>Deuxième chiffre/nombre</label>
+                    <input  class="form-control border border-dark" type="number" id="secondnumber">
+                </div>
+                <button type="submit" id="result" onclick="displayResult()" class="btn btn-danger border border-dark">Envoyer</button>
+            </form>
+        </div>
+<!--======================Partie JavaScript=====================--> 
+    <script>
+        //displayResult est le Onclick que j'ai mit dans mon bouton html
+        function displayResult(){
+        var firstnumber = document.getElementById('firstnumber').value;
+        var secondnumber = document.getElementById('secondnumber').value;
+        resultat = firstnumber * secondnumber
+        if(firstnumber && secondnumber){
+            alert('Le resultat est : ' + resultat);
+                } else{
+                    alert('Ce ne sont pas des chiffres ou des nombres !');
+                }     
+            }
+        //Id du bouton dans mon HTML
+        //value = a les informations renseignées dans le formulaire
+        //resultat = a ce que je veux multiplier
+        //(if) si ma variable est ...
+        //alors (else) affichera une alerte avec un message 
+    </script>
+</body>
+</html>

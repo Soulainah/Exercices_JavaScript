@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>EXERCICE 1 et 2 DE JAVASCRIPT</title>
+</head>
+<body>
+<!--Exercice 1--> 
+    <h1 style="background-color:coral;">JavaScript : Exercice 1 : Lors du passage du curseur l'image change</h1>
+    <img src="../Salameche.png" id="image1" onmouseover="changeImg()">
+ <!--Exercice 2--> 
+    <h1 style="background-color:coral;">JavaScript : Exercice 2 : Lors du passage du curseur l'image change puis revient a l'image initiale</h1>
+    <img src="../Evoli.png" id="image2" onmouseover="changeImg2()" onmouseout="ImageInitiale()">
+    <img src="../Les-spectres.png" id="image3" onmouseover="changeImg3()" onmouseout="ImageInitiale3()">
+    <img src="../Salameche.png" id="image4" onmouseover="changeImg4()" onmouseout="ImageInitiale4()">
+ <!--=====================Partie JavaScript=====================-->  
+   <script>
+    //exercice 1 : OnmouseOver sert a mettre une deuxieme image qui change lors du survol
+       function changeImg(){
+           document.getElementById('image1').src="../Raichu.png"
+       }
+    //exercice 2 : OnmouseOut sert a revenir sur l'image initiale
+       function changeImg2(){
+           document.getElementById('image2').src="../Pikachu.png"
+       }
+       function ImageInitiale(){
+           document.getElementById('image2').src='../Evoli.png'
+       }
+       function changeImg3(){
+           document.getElementById('image3').src="../Ronflex.png"
+       }
+       function ImageInitiale3(){
+           document.getElementById('image3').src='../Les-spectres.png'
+       }  
+       function changeImg4(){
+           document.getElementById('image4').src="../Raichu.png"
+       }
+       function ImageInitiale4(){
+           document.getElementById('image4').src='../Salameche.png'
+       }  
+    </script>
+</body>
+</html>

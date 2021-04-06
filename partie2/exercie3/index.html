@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>EXERCICE 3 DE JAVASCRIPT</title>
+</head>
+<body>
+    <h1 style="background-color:rgb(240, 212, 53);">JavaScript : Exercice 3 : Afficher une modale à la perte du focus dans l'input</h1>
+    <div class="container">                
+        <form class="border border-dark rounded bg-info w-50 p-5 shadow p-3 mb-5 mt-5">
+            <div class="form-group">
+                <label>Votre nom : </label>
+                <input class="form-control border border-dark" type="text" id="firstname">
+            </div>
+        </form>
+    </div>
+ <!--=====================Partie JavaScript=====================-->  
+   <script>
+       var elem = document.getElementById("firstname");
+        elem.onblur = afficherMessage;
+        function afficherMessage() {
+            alert("Vous etes hors de la zone !");
+        }
+        //onblur sert à afficher une modale lorsqu'on se trouve hors du input
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>EXERCICE 3 DE JAVASCRIPT</title>
+</head>
+<body>
+<!--Exercice 1-->  
+    <h1 style="background-color:rgb(122, 158, 64);">JavaScript : Exercice 3 : Créez trois div. Une rouge, une bleu et une verte. Au clic sur une div, la couleur est appliqué au texte.</h1>
+        <div class="container p-5">
+            <div class="d-flex justify-content-center"> <!--changer le fond de couleur-->  
+                <button type="button" class="btn btn-light mr-5" onclick="changeBGColor('white')">Fond Blanc</button>
+                <button type="button" class="btn btn-danger mr-5" onclick="changeBGColor('red')">Fond Rouge</button>
+                <button type="button" class="btn btn-info mr-5" onclick="changeBGColor('blue')">Fond Bleu</button>
+                <button type="button" class="btn btn-success mr-5" onclick="changeBGColor('green')">Fond Vert</button>
+            </div>   
+            <div class="d-flex justify-content-center mt-5"> <!--changer le texte de couleur--> 
+                <button type="button" class="btn btn-dark mr-5" onclick="changeColor('black')">Texte Noir</button>
+                <button type="button" class="btn btn-danger mr-5" onclick="changeColor('red')">Texte Rouge</button>
+                <button type="button" class="btn btn-info mr-5" onclick="changeColor('blue')">Texte Bleu</button>
+                <button type="button" class="btn btn-success mr-5" onclick="changeColor('green')">Texte Vert</button>
+            </div>  
+            <p id="texte" class="pt-5 font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quam sapiente? Suscipit dolore vel itaque magni debitis modi corporis repellat adipisci impedit culpa quam distinctio quia officia, fuga doloribus quae!
+                Accusantium esse a, incidunt minima laboriosam consequatur sed fugiat, ad facere, facilis doloremque? Ipsum eius cum excepturi, dolorum fuga possimus temporibus odit nostrum molestias, vitae exercitationem, voluptas harum corrupti suscipit.
+                Voluptatum, provident? Quo, laborum assumenda accusamus nisi provident totam natus officia aliquid molestias possimus corporis vitae doloremque accusantium quam ratione laboriosam fugit quidem. Eius aut doloribus fugiat libero earum? Recusandae.
+                Quisquam ad perspiciatis, libero consectetur minus, vero adipisci possimus dolore omnis corrupti nostrum, atque dignissimos iure? Sed, quas atque, inventore at, minus nihil ab provident odit nam nisi natus doloribus.
+                Delectus illum laborum numquam! Minus delectus dolorum facere aperiam nemo facilis iusto maxime, inventore, commodi suscipit quae necessitatibus itaque quos assumenda et esse repellat ex iure at optio quis dicta?
+                Voluptate perspiciatis hic, placeat cum tempora eaque ducimus facere inventore accusamus incidunt, quasi dolore excepturi perferendis natus voluptatibus dolor! Fugit ex facere dolorum laudantium delectus ea. In nam quia dolorum?
+                Mollitia ad expedita voluptatem assumenda tenetur vitae ab obcaecati, minus ratione fugiat ut est voluptas beatae provident dicta voluptates aperiam a! Natus voluptatibus modi ipsum sit quibusdam quae accusamus voluptatem.
+                Ab, totam omnis id vel quis, incidunt dicta suscipit eaque ratione numquam corporis commodi, nostrum vero placeat consequatur aliquam similique! Ratione officia molestiae corrupti corporis at suscipit maiores dolorem amet?
+                Id blanditiis consequuntur saepe cupiditate maiores odio amet laborum, vitae nemo harum. Dolor voluptatibus, inventore praesentium accusantium mollitia aut placeat doloribus sequi alias, quas ad sapiente quisquam quibusdam, cupiditate tenetur?
+                Nihil deserunt est officiis labore quos ducimus, eum consequatur in odit doloremque ipsam, corrupti aperiam quam odio, itaque enim maxime officia nemo mollitia ex corporis hic architecto modi placeat. Optio.
+            </p>
+        </div>
+    <!--=====================Partie JavaScript=====================-->  
+   <script>
+    //changer les couleurs des fond, 
+    function changeBGColor(fond){
+        document.body.style.background = fond;
+    }
+    //changer les couleurs des texte, 
+    function changeColor(color){
+        document.getElementById('texte').style.color = color;
+    }
+
+
+
+
+    </script>
+</body>
+</html>

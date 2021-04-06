@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>EXERCICE 2 DE JAVASCRIPT</title>
+</head>
+<body>
+<!--Exercice 1-->  
+    <h1 style="background-color:rgb(214, 80, 255);">JavaScript : Exercice 2 : Créez deux boutons. L'un pour cacher le texte, l'autre pour l'afficher</h1>
+        <div class="container p-5">
+            <div class="d-flex justify-content-center">
+                <button id="show" type="button" onclick="afficher_cacher()" class="btn btn-outline-primary mr-5">Afficher le texte</button>
+                <button id="hide" type="button" onclick="afficher_cacher()" class="btn btn-outline-warning">Masquer le texte</button>
+            </div>    
+            <p id="texte" class="pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quam sapiente? Suscipit dolore vel itaque magni debitis modi corporis repellat adipisci impedit culpa quam distinctio quia officia, fuga doloribus quae!
+                Accusantium esse a, incidunt minima laboriosam consequatur sed fugiat, ad facere, facilis doloremque? Ipsum eius cum excepturi, dolorum fuga possimus temporibus odit nostrum molestias, vitae exercitationem, voluptas harum corrupti suscipit.
+                Voluptatum, provident? Quo, laborum assumenda accusamus nisi provident totam natus officia aliquid molestias possimus corporis vitae doloremque accusantium quam ratione laboriosam fugit quidem. Eius aut doloribus fugiat libero earum? Recusandae.
+                Quisquam ad perspiciatis, libero consectetur minus, vero adipisci possimus dolore omnis corrupti nostrum, atque dignissimos iure? Sed, quas atque, inventore at, minus nihil ab provident odit nam nisi natus doloribus.
+                Delectus illum laborum numquam! Minus delectus dolorum facere aperiam nemo facilis iusto maxime, inventore, commodi suscipit quae necessitatibus itaque quos assumenda et esse repellat ex iure at optio quis dicta?
+                Voluptate perspiciatis hic, placeat cum tempora eaque ducimus facere inventore accusamus incidunt, quasi dolore excepturi perferendis natus voluptatibus dolor! Fugit ex facere dolorum laudantium delectus ea. In nam quia dolorum?
+                Mollitia ad expedita voluptatem assumenda tenetur vitae ab obcaecati, minus ratione fugiat ut est voluptas beatae provident dicta voluptates aperiam a! Natus voluptatibus modi ipsum sit quibusdam quae accusamus voluptatem.
+                Ab, totam omnis id vel quis, incidunt dicta suscipit eaque ratione numquam corporis commodi, nostrum vero placeat consequatur aliquam similique! Ratione officia molestiae corrupti corporis at suscipit maiores dolorem amet?
+                Id blanditiis consequuntur saepe cupiditate maiores odio amet laborum, vitae nemo harum. Dolor voluptatibus, inventore praesentium accusantium mollitia aut placeat doloribus sequi alias, quas ad sapiente quisquam quibusdam, cupiditate tenetur?
+                Nihil deserunt est officiis labore quos ducimus, eum consequatur in odit doloremque ipsam, corrupti aperiam quam odio, itaque enim maxime officia nemo mollitia ex corporis hic architecto modi placeat. Optio.
+            </p>
+        </div>
+    <!--=====================Partie JavaScript=====================-->  
+   <script>
+    //Afficher le texte
+    document.getElementById('show').addEventListener('click', function(){
+        var afficher = document.getElementById('texte').style.display = 'block';
+    })
+    //Masquer le texte
+    document.getElementById('hide').addEventListener('click', function(){
+        var masquer = document.getElementById('texte').style.display = 'none';
+    })
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>EXERCICE 5 DE JAVASCRIPT</title>
+</head>
+<body>
+    <h1 style="background-color:rgb(60, 165, 160);">JavaScript : Exercice 5 : Trois champs contiennent des valeurs, au clic sur un bouton vous devez effacer ces valeurs</h1>
+    <div class="container">                
+        <form class="border border-dark rounded bg-info w-50 p-5 shadow p-3 mb-5 mt-5" id="formulaire">
+            <div class="form-group">
+                <label>Votre nom : </label>
+                <input class="form-control border border-dark" type="text" value="Fitas" id="fname">
+            </div>
+            <div class="form-group">
+                <label>Votre prénom : </label>
+                <input class="form-control border border-dark" type="text" value="Soulainah" id="lname">
+            </div>
+            <div class="form-group">
+                <label>Votre ville : </label>
+                <input class="form-control border border-dark" type="text" value="Ermont" id="city">
+            </div>
+            <button type="button" id="button" onclick="ClearAll()" class="btn btn-danger border border-dark">Reset</button>
+        </form>
+    </div>
+ <!--=====================Partie JavaScript=====================-->  
+   <script>
+       function ClearAll(){
+           document.getElementById('fname').value = '';
+           document.getElementById('lname').value = '';
+           document.getElementById('city').value = '';
+       }
+        //Pour effacer tout les values indiquer dans les input il faut donc notre fonction mettre ".value = ''"
+        //dire que ".value" et egal à vide " = '' "
+    </script>
+</body>
+</html>

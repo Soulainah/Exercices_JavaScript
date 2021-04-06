@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>EXERCICE 4 DE JAVASCRIPT</title>
+</head>
+<body>
+    <h1 style="background-color:rgb(72, 182, 145);">JavaScript : Exercie 4 : Créer un formulaire avec Alert qui regroupera les informations du formulaire </h1>
+        <div class="container">
+            <form class="border border-dark rounded bg-info w-50 p-5 shadow p-3 mb-5 mt-5">
+                <div class="form-group">
+                  <label>Nom</label>
+                  <input class="form-control border border-dark" type="text" id="lname">
+                </div>
+                <div class="form-group">
+                    <label>Prénom</label>
+                    <input class="form-control border border-dark" type="text" id="fname">
+                </div>
+                <div class="form-group">
+                    <label>Ville</label>
+                    <input class="form-control border border-dark" type="text" id="city">
+                </div>
+                <button type="submit" id="button" class="btn btn-danger border border-dark">Envoyer</button>
+              </form>
+        </div>
+<!--======================Partie JavaScript=====================--> 
+    <script>
+        //prompt demander une information
+        button.addEventListener('click' ,information);
+        function information(){
+        var lname = document.getElementById('lname').value;
+        var fname = document.getElementById('fname').value;
+        var city = document.getElementById('city').value;
+        if(isNaN(lname && fname && city)){
+            alert('Nom : ' + lname + '\n' + 'Prénom : ' + fname + '\n' + 'Ville : ' + city);
+        } else{
+            alert('Les renseignements demandés ne sont pas correct !');
+        }     
+        }
+        //Id du bouton + un evenement "click" que j'ai nommé "information"
+        //je lui dis de mettre tout les informations "document.getElementById" dans le bouton lors du clique 
+        //value = a les informations renseignées dans le formulaire
+        //(if) si ma variable est un nombre (isNaN)
+        //alors (else) on affichera une alerte avec un message 
+    </script>
+</body>
+</html>

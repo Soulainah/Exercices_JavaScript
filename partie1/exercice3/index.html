@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICE 3 DE JAVASCRIPT</title>
+</head>
+<body>
+    <h1 style="background-color:rgb(207, 113, 160);">JavaScript : Exercice 3 : Créer un Prompt puis affciher une Alert aprés validation</h1>
+<!--======================Partie JavaScript=====================-->   
+    <script>
+        //prompt demander une information 
+        var information = prompt('Entrez votre prénom s\'il vous plait ?');
+        if(isNaN(information)){
+                alert('Bienvenue sur ma page ' + information);
+            } else{
+                alert('Ce n\'est pas un prénom !');
+            }
+        //(if) si ma variable est un nombre (isNaN)
+        //alors (else) on affichera une alerte avec un message 
+    </script>
+</body>
+</html>
