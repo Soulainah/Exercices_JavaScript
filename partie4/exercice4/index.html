@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>EXERCICE 4 DE JAVASCRIPT</title>
+
+</head>
+<body>
+<!--Exercice 2-->  
+    <h1 style="background-color:rgb(202, 59, 183);">JavaScript : Exercice 4 : Afficher une modale posant une question</h1>
+<!--=====================Partie JavaScript=====================-->  
+   <script>
+       //la derniere condition doit etre juste un else sans un if
+       function QuestionColorFlag() {
+           var WhatColor = prompt('Quelle est la premiére couleur du drapeau de l\'île Maurcice ?');
+           if (WhatColor == 'rouge') {
+               alert('C\'est la bonne couleur');
+           }
+           else if (WhatColor == 'bleu') {
+               alert('NON ! C\'est la deuxième couleur');
+           }
+           else if (WhatColor == 'jaune') {
+               alert('NON ! C\'est la troisième couleur');
+           }
+           else if (WhatColor == 'vert') {
+               alert('NON ! C\'est la quatrième couleur');
+           }
+           else if (WhatColor == '') {
+               alert('Repondez à la question !');
+           }
+           else {
+               alert('Mauvaise réponse !');
+           }
+       }
+       QuestionColorFlag();
+    </script>
+</body>
+</html>

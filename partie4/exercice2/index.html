@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>EXERCICE 1 DE JAVASCRIPT</title>
+</head>
+<body>
+<!--Exercice 2-->  
+    <h1 style="background-color:rgb(59, 202, 59);">JavaScript : Exercice 2 : Créez une fonction qui permet d'ajouter un élément au début du tableau.</h1>
+    <div class="container">                
+        <form class="bg-info w-50 p-5 shadow p-3 mt-5">
+            <div class="form-group">
+                <label>Ajout élément dans un tableau : </label>
+                <input class="form-control" type="text" id="addWords">
+            </div>
+            <button type="button" onclick="Addlist()" class="btn btn-danger ml-5 px-5">Ajouter</button>
+            <button type="button" onclick="Mylist()" class="btn btn-danger ml-5 px-5">Voir</button>
+        </form>
+    </div>
+<!--=====================Partie JavaScript=====================-->  
+   <script>
+    //[] permet de mettre des elements pour creer un tableau
+    //dans notre function on va chercher l'element id dans le html + .value pour lui dire que : on va ajouter la valeur mit dans le input
+    //unshift sert a ajouter le mot au debut
+    var cream = [ 'Chocolat', 'Fraise', 'Pistache', 'Vanille' ];
+    function Addlist() {
+            var addWords = document.getElementById('addWords').value;
+            cream.unshift(addWords);
+            alert(addWords + ' a été ajouté au tableau');
+        }
+    //la var du tableau , alert sert a l'afficher dans une modale
+       function Mylist() {
+            alert(cream); 
+       }
+    </script>
+</body>
+</html>

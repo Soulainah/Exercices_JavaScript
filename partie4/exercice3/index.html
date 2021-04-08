@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>EXERCICE 3 DE JAVASCRIPT</title>
+
+</head>
+<body>
+<!--Exercice 2-->  
+    <h1 style="background-color:rgb(59, 126, 202);">JavaScript : Exercice 3 : Créez une fonction qui permet d'incrémenter une variable. A chaque clic sur un bouton, on affiche le nombre de clics.</h1>
+    <div class="m-5 text-center">
+        <button type="button" onclick="Myclick()" class="btn btn-danger">Clique ! +1</button>
+        <button type="button" onclick="Myclick5()" class="btn btn-warning">Clique ! +5</button>
+        <button type="button" onclick="Myclick10()" class="btn btn-success">Clique ! +10</button>
+            <p class="mt-5 display-4">Nombre de clique : <span id="clicks">0</span></p>
+        <button type="button" onclick="Clear()" class="btn btn-dark">Reset</button>
+    </div> 
+<!--=====================Partie JavaScript=====================-->  
+   <script>
+       //notre variable 'clicks' est = à 0
+       //la var clicks doit additionner et affecter le resultat (+=) de 1 en 1
+       //innerHTML veut dire afficher sur notre page HTML
+       var clicks = 0;
+       function Myclick() {
+           clicks += 1;
+           document.getElementById('clicks').innerHTML = clicks;
+       }
+       function Myclick5() {
+           clicks += 5;
+           document.getElementById('clicks').innerHTML = clicks;
+       }
+       function Myclick10() {
+           clicks += 10;
+           document.getElementById('clicks').innerHTML = clicks;
+       }
+       function Clear(){
+           document.getElementById('clicks').innerHTML = 0;
+       }
+    </script>
+</body>
+</html>
